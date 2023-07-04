@@ -1,0 +1,235 @@
+
+* {
+
+  box-sizing: border-box;
+}
+
+body {
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+main {
+  padding: 10px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+a {
+  cursor: pointer;
+}
+
+header {
+ 
+  margin-bottom: 40px;
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+header span {
+  text-transform: capitalize
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header .logo {
+  
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+header nav {
+  display: flex;
+  gap: 15px;
+}
+
+.post {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 12px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 5px;
+  margin-bottom: 65px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  /* box-shadow: 0 0 0 1px rgba(53,72,91,.07), 0 2px 2px rgba(0,0,0,.01), 0 4px 4px rgba(0,0,0,.02), 0 10px 8px rgba(0,0,0,.03), 0 15px 15px rgba(0,0,0,.03), 0 30px 30px rgba(0,0,0,.04), 0 70px 65px rgba(0,0,0,.05); */
+}
+
+
+.post:hover {
+  /* box-shadow: 0 0 0 1px rgba(53,72,91,.04), 0 2px 2px rgba(0,0,0,0), 0 4px 4px rgba(0,0,0,.01), 0 10px 8px rgba(0,0,0,.02), 0 15px 15px rgba(0,0,0,.02), 0 30px 30px rgba(0,0,0,.02), 0 70px 65px rgba(0,0,0,.03); */
+  box-shadow: rgba(0, 0, 0, 0.1) 5px 20px 35px;
+}
+
+@media screen and (min-width:600px) {
+  div.post {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
+
+.texts h2 {
+  
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+div.post div.texts a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.info {
+  margin: 6px 0;
+  color: #888;
+  font-size: 0.7rem;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+
+.author {
+  text-transform: capitalize;
+  color: #333;
+}
+
+.summary {
+  margin: 10px 0;
+  line-height: 1.4rem;
+}
+
+form.login {
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+form.register {
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 5px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+button {
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  background-color: #555;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  border: 0;
+  padding: 7px 0;
+}
+
+form.login h1,
+form.register h1 {
+  text-align: center;
+}
+
+div.post-page div.image {
+  max-height: 400px;
+  display: flex;
+  overflow: hidden;
+}
+
+div.post-page div.image img {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+}
+
+div.post-page p img {
+  margin-top: 12px;
+  margin-bottom: 0px;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+}
+
+div.post-page div.content p {
+  line-height: 1.6rem;
+}
+
+div.post-page a {
+  color: #333;
+  text-decoration: underline;
+}
+
+div.post-page h1 {
+  text-align: center;
+  margin: 10px 0 5px;
+}
+
+div.post-page time {
+  text-align: center;
+  display: block;
+  font-size: 0.7rem;
+  color: #aaa;
+  margin-bottom: 3px;
+}
+
+div.post-page div.author {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: slategray;
+}
+
+div.edit-row {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+div.post-page a.edit-btn {
+  background-color: #333;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  padding: 15px 28px;
+  border-radius: 5px;
+  text-decoration: none;
+
+}
+
+a svg {
+  height: 20px;
+
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: hsl(190, 12%, 90%);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(190, 12%, 80%);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(190, 8%, 65%)
+}
