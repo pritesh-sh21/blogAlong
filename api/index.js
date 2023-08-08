@@ -139,6 +139,15 @@ app.get('/edit/:id', async (req, res) => {
     res.json(postDoc);
 })
 
+//handling delete post route
+app.delete('/post/:id',async(req,res)=>{
+    const {id}=req.params;
+    const post=await Post.findByIdAndDelete(id);
+    if(!post){
+        return res.status(500).json({ message: 'Error deleting post' });
+    }
+    res.status(200).json({ message: 'success' });
+})
 
 app.put('/post', uploadMiddleware.single('file'), (req, res) => {
     // res.json({files:req.file});
