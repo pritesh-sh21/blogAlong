@@ -16,7 +16,7 @@ const salt = bcrypt.genSaltSync(10);
 const secret = 'bhjbdjwj3b34b43bhj42jjsjjhbjdcjwa';
 
 //middleware
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
+app.use(cors({ credentials: true, origin: 'https://blog-along.vercel.app' }));
 app.use(express.json()); //json parser
 app.use(cookieParser()); //cookie parser
 app.use('/uploads', express.static(__dirname + '/uploads')); //to use static files
