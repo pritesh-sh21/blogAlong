@@ -5,7 +5,7 @@ const IndexPage = () => {
   //when we  mount our homepage, we want to run this function
   const [posts,setPosts]= useState({});
   useEffect(() => {
-    fetch('http://localhost:4000/post').then(response => {
+    fetch('https://blog-along.vercel.app/post').then(response => {
       response.json().then(posts => {
         console.log(posts);
         setPosts(posts);
