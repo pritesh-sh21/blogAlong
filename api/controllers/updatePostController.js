@@ -3,7 +3,7 @@ const fs = require("fs");
 const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv");
 dotenv.config();
-const secret = process.env.secret;
+const secret = process.env.SECRET_KEY;
 
 exports.updatePost = (req, res) => {
   let newPath = null;

@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken");
 const salt = bcrypt.genSaltSync(10);
 const dotenv = require("dotenv");
 dotenv.config();
-const secret = process.env.secret;
+const secret = process.env.SECRET_KEY;
 
 exports.register = async (req, res) => {
   const { username, password } = req.body;
